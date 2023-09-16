@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transaction</title>
+  <link rel="stylesheet" href="assets/transaction.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="welcome">
+        <h1>Transaction Report Data</h1>
+      </div>
+      <div class="button">
+        <button id="toDashboard">Back to Dashboard</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="transactions">
+      <div class="transactionsHeader">
+        <h1>Input Date</h1>
+        <button id="selectDate" class="date">Date Range</button>
+        <div id="dateRange" style="display: none">
+          <input type="date" id="startDate" />
+          <input type="date" id="endDate" />
+          <button id="applyDateRange" class="date">Apply Date Range</button>
+        </div>
+      </div>
+      <div class="transactionCustomer">
+        <h1>Transaction Reports</h1>
+        <table class="customerTransaction">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Customer Name</th>
+              <th>Total Product</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody id="customerTransactionBody"></tbody>
+        </table>
+      </div>
+      <div class="transactionList" style="display: none">
+        <h1>Product Transaction Reports</h1>
+        <table class="tableTransaction">
+          <thead>
+            <tr>
+              <th>Customer Name</th>
+              <th>Product Name</th>
+              <th>Total Product</th>
+              <th>Product Price</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody id="transactionListBody"></tbody>
+        </table>
+      </div>
+      <div class="adminEvaluation">
+        <h1>Evaluation from Reports</h1>
+        <table class="tableEvaluation">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Total Product</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody id="tableEvaluationBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footpage">&copy; Designed for Toko Kelontong Pak Adin</div>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <script src="assets/transaction.js"></script>
+</body>
+
+</html>

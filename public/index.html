@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/signin.css" />
+  <title>Sign In</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="title">
+        <h1>Welcome</h1>
+      </div>
+      <div class="button">
+        <h1>Dont have an account?</h1>
+        <button id="signupButton">Sign Up</button>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <form id="signinForm">
+      <div class="login-box">
+        <p>Sign In</p>
+        <div class="user-box">
+          <input type="email" id="emailInput" required />
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="password" id="passwordInput" required />
+          <label>Password</label>
+        </div>
+        <div class="button">
+          <button type="submit" id="signinButton">Sign In</button>
+        </div>
+      </div>
+    </form>
+  </section>
+  <footer>
+    <div class="footpage">&copy; Designed for Toko Kelontong Pak Adin</div>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="assets/signin.js"></script>
+</body>
+
+</html>

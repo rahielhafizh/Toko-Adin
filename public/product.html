@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="/assets/product.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="productDashboard">
+        <h1>Admin Page</h1>
+        <p>Manage Your Product Here</p>
+      </div>
+      <div class="buttonDashboard">
+        <button id="toDashboard">Dashboard</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="dashboardContainer">
+      <div class="addProductSection">
+        <h2>Add Product</h2>
+        <form id="addProductForm">
+          <div class="productForm">
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" required />
+          </div>
+          <div class="productForm">
+            <label for="productPrice">Product Price</label>
+            <input type="number" id="productPrice" required />
+          </div>
+          <div class="productForm">
+            <label for="productImage">Product Image</label>
+            <input type="file" id="productImage" accept="image/*" />
+          </div>
+          <div class="addButton">
+            <button type="submit">Add Product</button>
+          </div>
+        </form>
+      </div>
+      <br />
+      <div class="productContainer">
+        <!-- Products will be added dynamically -->
+      </div>
+    </div>
+
+    <div class="editContainer" id="editSection">
+      <div class="productEditor">
+        <div class="editForm">
+          <h2>Edit Product</h2>
+          <label for="editProductName">Product Name</label>
+          <input type="text" id="editProductName" required />
+        </div>
+        <div class="editForm">
+          <label for="editProductPrice">Product Price</label>
+          <input type="number" id="editProductPrice" required />
+        </div>
+        <div class="editForm">
+          <label for="editProductImage">Product Image</label>
+          <input type="file" id="editProductImage" accept="image/*" />
+        </div>
+        <div class="editForm">
+          <img id="editProductPreview" src="" alt="" />
+        </div>
+        <div class="buttonEditor">
+          <button id="editProduct">Update Product</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+  <script src="/assets/product.js"></script>
+</body>
+
+</html>

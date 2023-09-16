@@ -1,0 +1,143 @@
+:root {
+  --primary-bg-color: #caf0f8;
+  --primary-text-color: #03045e;
+  --secondary-bg-color: #ade8f4;
+  --secondary-text-color: #ffffff;
+  --accent-color: #90e0ef;
+  --hover-color: #00b4d8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  margin: auto;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.signUpBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25rem;
+  padding: 1rem;
+  margin-bottom: 14rem;
+  transform: translate(-50%, -50%);
+  background-color: var(--secondary-bg-color);
+  box-sizing: border-box;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.signUpBox h1 {
+  color: var(--primary-text-color);
+}
+
+.signUpBox p {
+  color: var(--primary-text-color);
+  font-style: oblique;
+  padding: 1rem;
+}
+
+.signUpBox .userData {
+  position: relative;
+}
+
+.signUpBox .userData input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  border: solid 1px var(--primary-text-color);
+  margin-bottom: 30px;
+  outline: none;
+  background-color: var(--primary-bg-color);
+  text-align: center;
+}
+
+.signUpBox .userData label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: var(--primary-text-color);
+}
+
+.signUpBox .userData input:focus ~ label,
+.signUpBox .userData input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  padding-top: 1px;
+}
+
+.buttonSignUp {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.buttonSignUp button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+}
+
+.buttonSignUp button:hover {
+  color: var(--primary-bg-color);
+  background-color: var(--hover-color);
+}
+
+.buttonSignIn button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+}
+
+.buttonSignIn button:hover {
+  color: var(--primary-bg-color);
+  background-color: var(--hover-color);
+}
+
+@media screen and (max-width: 768px) {
+  .signUpBox {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}

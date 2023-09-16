@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/signup.css" />
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="title">
+        <h1>Sign up for our Website!</h1>
+        <p>Create your account easily!</p>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="signUpBox">
+      <h1>Sign Up</h1>
+      <p>Fill In Your Data</p>
+      <form>
+        <div class="userData">
+          <input required="true" id="userEmailInput" type="email" />
+          <label for="userEmail">Email</label>
+        </div>
+        <div class="userData">
+          <input required="true" id="userPasswordInput" type="password" />
+          <label for="userPassword">Password</label>
+        </div>
+        <div class="buttonSignUp">
+          <button id="createAccount">Create Account</button>
+        </div>
+      </form>
+      <p>Already have an Account?</p>
+      <div class="buttonSignIn">
+        <button id="signInBtn">Sign In</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footpage">&copy; Designed for Toko Kelontong Pak Adin</div>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+  <script src="/assets/signup.js"></script>
+</body>
+
+</html>

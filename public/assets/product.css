@@ -1,0 +1,255 @@
+:root {
+  --primary-bg-color: #caf0f8;
+  --primary-text-color: #03045e;
+  --secondary-bg-color: #ade8f4;
+  --accent-color: #90e0ef;
+  --hover-color: #00b4d8;
+  --border-color: #90e0ef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-bg-color);
+  height: 100%;
+}
+
+header {
+  background-color: #03045e;
+  color: #ffffff;
+  padding: 20px;
+  margin-bottom: 1rem;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonDashboard button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+}
+
+.buttonDashboard button:hover {
+  color: var(--primary-bg-color);
+  background-color: var(--hover-color);
+}
+
+.dashboardContainer {
+  display: flex;
+}
+
+.addProductSection {
+  margin: 1rem;
+  width: 25rem;
+  background-color: var(--secondary-bg-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 23rem;
+  border: solid var(--border-color);
+}
+
+.addProductSection h2 {
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.addProductSection .productForm {
+  position: relative;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin: 1rem;
+}
+
+.addProductSection .productForm input {
+  margin-top: 10px;
+  width: 20rem;
+  padding: 10px 0;
+  color: var(--primary-text-color);
+  border: none;
+  outline: none;
+  background-color: var(--primary-bg-color);
+  text-align: center;
+  font-weight: bold;
+}
+
+.addProductSection .addButton {
+  text-align: center;
+}
+
+.addProductSection .addButton button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+}
+
+.addProductSection .addButton button:hover {
+  color: var(--primary-bg-color);
+  background-color: var(--hover-color);
+}
+
+.addProductSection .productForm img {
+  margin-top: 1rem;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.productContainer {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 25rem;
+}
+
+.productBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--secondary-bg-color);
+  border-radius: 1rem;
+  position: relative;
+  height: 21rem;
+  border: solid var(--border-color);
+}
+
+.productImage img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: fill;
+  border-radius: 5px;
+  padding: 0.2rem;
+  border: 1px solid var(--primary-text-color);
+  background-color: #ffffff;
+}
+
+.productContent {
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.productContent h1 {
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.productContent p {
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.buttonProduct button {
+  margin-top: 0.2rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+}
+
+.buttonProduct button:hover {
+  color: var(--primary-bg-color);
+  background-color: var(--hover-color);
+}
+
+.main {
+  position: relative;
+}
+
+.editContainer {
+  display: none;
+}
+
+.editContainer.show {
+  display: flex;
+}
+
+.productEditor {
+  margin: 1rem;
+  width: 24rem;
+  background-color: var(--secondary-bg-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid var(--border-color);
+}
+
+.productEditor h2 {
+  color: #1d3557;
+  text-align: center;
+}
+
+.productEditor .editForm {
+  position: relative;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin: 1rem;
+}
+
+.productEditor .editForm input {
+  margin-top: 10px;
+  width: 20rem;
+  padding: 10px 0;
+  color: var(--primary-text-color);
+  border: none;
+  outline: none;
+  background-color: var(--primary-bg-color);
+  text-align: center;
+  font-weight: bold;
+}
+
+.productEditor .buttonEditor {
+  text-align: center;
+}
+
+.productEditor .buttonEditor button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+}
+
+.productEditor .buttonEditor button:hover {
+  color: var(--primary-bg-color);
+  background-color: var(--hover-color);
+}
+
+.editForm img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: fill;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid var(--primary-text-color);
+}

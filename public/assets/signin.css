@@ -1,0 +1,151 @@
+:root {
+  --primary-bg-color: #caf0f8;
+  --primary-text-color: #03045e;
+  --secondary-bg-color: #ade8f4;
+  --secondary-text-color: #ffffff;
+  --accent-color: #90e0ef;
+  --hover-color: #00b4d8;
+  --border-color: #1d3557;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  height: 100vh;
+}
+
+header {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--secondary-text-color);
+}
+
+.button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.button button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: solid 1px var(--border-color);
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+}
+
+.button h1 {
+  font-size: 0.8rem;
+}
+
+.button button:hover {
+  color: var(--primary-bg-color);
+  background-color: var(--hover-color);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  margin: 20px auto;
+  transform: translate(-50%, -55%);
+  background-color: var(--secondary-bg-color);
+  backdrop-filter: blur(3px);
+  box-sizing: border-box;
+  border-radius: 2rem;
+  align-content: center;
+  padding-top: 20px;
+}
+
+.login-box p:first-child {
+  margin: 0 0 30px;
+  padding: 0;
+  color: var(--primary-text-color);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  border: solid 1px var(--border-color);
+  outline: none;
+  background-color: var(--primary-bg-color);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-box .user-box label {
+  color: var(--border-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: var(--primary-text-color);
+  font-size: 10px;
+  padding-top: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .login-box {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}

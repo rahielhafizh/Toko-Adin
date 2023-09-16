@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/dashboard.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="dashboard">
+        <h1>Welcome!</h1>
+        <p1>Input your transaction here</p1>
+      </div>
+      <div class="button">
+        <button id="productManagement">Product</button>
+        <button class="show-cart">Cart</button>
+        <button id="transactionButton">Transaction Reports</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="inputSection">
+      <div class="selectDateSection">
+        <h1>Select Date</h1>
+        <input type="date" id="startDate" />
+        <button id="selectToday" class="date">Apply Date</button>
+      </div>
+      <div class="inputCustomer">
+        <h1>Customer Name</h1>
+        <input type="text" id="customerName" />
+        <button id="selectCustomer" class="customer">Apply Name</button>
+      </div>
+      <div class="searchProduct">
+        <h1>Search Product</h1>
+        <input type="text" id="searchProductName" />
+        <button id="productSearch" class="search">Search</button>
+      </div>
+    </div>
+    <div class="box-container" id="productContainer">
+      <!-- Products will be added dynamically -->
+    </div>
+
+    <div id="cart-section" class="cart-container">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span class="close-cart"><i class="fas fa-times"></i></span>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be added dynamically -->
+      </div>
+      <div class="cart-footer">
+        <h3>Total: <span class="cart-total">Rp 0</span></h3>
+        <button class="clear-cart">Clear Cart</button>
+        <button class="checkout">Checkout</button>
+      </div>
+    </div>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <script src="/assets/dashboard.js"></script>
+</body>
+<footer>
+  <div class="footpage">&copy; Designed for Toko Kelontong Pak Adin</div>
+</footer>
+<button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+</html>
