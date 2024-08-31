@@ -155,7 +155,7 @@ main {
   border-radius: 5px;
   position: relative;
   width: auto;
-  height: 18rem;
+  height: 20rem;
   border: solid var(--accent-color);
 }
 
